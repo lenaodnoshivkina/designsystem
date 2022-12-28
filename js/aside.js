@@ -1,5 +1,4 @@
 const sections = document.querySelectorAll('.aside_section');
-const subSections = document.querySelectorAll('.aside_section_body');
 
 sections.forEach(section => {
     section.addEventListener('click', () => {

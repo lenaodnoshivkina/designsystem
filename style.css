@@ -1,3 +1,20 @@
+/* colors */
+:root {
+    --white: #FFFFFF;
+    --gray-bg: #F3F3F3;
+    --gray-ln: #D6D6D6;
+    --black: #000000;
+    --gray-txt: #A5A5A5;
+    --yellow: #FFF352;
+    --green-1: #CFE7D7;
+    --green-2: #44AF69;
+    --green-3: #167A39;
+    --red-1: #FECBCF;
+    --red-2: #D82535;
+    --red-3: #931621;
+}
+
+/* base styles */
 body {
     margin: 0;
     height: 100%;
@@ -11,10 +28,78 @@ p, ul, li {
 li {
     list-style-type: none;
 }
+
+/* typography styles */
+h1, h2 {
+    font-weight: 700;
+}
+h3, h4, button {
+    font-weight: 600;
+}
+h1 {
+    font-size: 5.75rem;
+    line-height: 6.25rem;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
 a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
+.subtext {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+.button_large, .button_medium, .button_small {
+    font-weight: 600;
+}
+.button_large {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+}
+.button_medium {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+.button_small {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+}
+
+/* grid */
+.root_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.col_nav {
+    flex: 2.6;
+}
+.col_content {
+    flex: 7;
+}
+.col_aside {
+    flex: 2.4;
+}
+
+/* aside styles */
 .logo {
     margin-bottom: 64px;   
 }
@@ -22,7 +107,6 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 380px;
     height: 100%;
     background: #F1EFF4;
     padding: 64px 32px 64px 64px;
