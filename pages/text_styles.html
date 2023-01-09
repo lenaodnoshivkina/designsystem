@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Фирменный стиль</h4>
+                    <h2 class="col_content_title">Текстовые стили</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+                        <div class="content_wrapper_links" id="font">
+                            <p class="gray links">#1</p>
+                            <p class="links">Шрифт</p>
+                        </div>
+        
+                        <p>Основной шрифт в интерфейсах CURSA — «Montserrat».</p>
+                        <p>Шрифт Montserrat относится к категориям гротески, декоративные. Гарнитура содержит 18 начертаний. Автор Julieta Ulanovsky. Распространяется бесплатно для личного и коммерческого использования.</p>
+                        
+                        <div class="content_wrapper_links" id="styles">
+                            <p class="gray links">#2</p>
+                            <p class="links">Стили</p>
+                        </div>
+                        <p>Ниже в списке приведены размеры для заголовков и остальных текстов интерфейса, однако этот выбор носит рекомендательный, а не обязательный характер.</p>
+                        <p>Выбирайте размеры и насыщенность, которые больше подойдут аудитории вашего продукта, но помните, что заголовки различных уровней должны хорошо отличаться. Это помогает ориентироваться в тексте и вычленять главное.</p>
+                        <img class="content_image" src="../img/Typography.jpg"/>
+        
+                        <div class="content_wrapper_links" id="grid">
+                            <p class="gray links">#3</p>
+                            <p class="links">Размеры</p>
+                        </div>                
+                        <p>Для текстов, размером >3m высота строки отличается от размера кегля на +1m, а отступ между абзацами на -1m. Для текстов, размером &lt;3m высота строки отличается от размера кегля на +0.5m, а отступ между абзацами на -0.5m.</p>
+                        <p>Для наилучшей читабельности длина строки должна быть длинной до 75 символов, включая пробелы.</p>
+                        <p>Модуль и сетка имеют прикладное значение — помогают выбирать размеры и отступы, но самостоятельной ценности у них нет, поэтому текстовые блоки, а тем более их базовые линии, не нужно фанатично вписывать в восьмипиксельную сетку.</p>    
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#font">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Шрифт</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#styles">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Стили</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#grid">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Размеры</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("firmstyle");
+    </script>
+ </body>
+</html>
