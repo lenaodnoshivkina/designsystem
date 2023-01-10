@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Фирменный стиль</h4>
+                    <h2 class="col_content_title">Отступы и выравнивание</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+                        <div class="content_wrapper_links" id="margins">
+                            <p class="gray links">#1</p>
+                            <p class="links">Отступы</p>
+                        </div>
+
+                        <p>Делайте отступы, кратные модулю. Модуль в 8 пикселей — базовая размерная единица для интерфейсов Контура.</p>
+                        <p>Чтобы облегчить восприятие экрана, выбирайте отступы, которые отличаются достаточно сильно — 1, 2, 4 и 8 модулей (8, 16, 32 и 64px). Используйте минимальное количество разных отступов в рамках одного экрана.</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+                        <p>Сохраняйте ритм отступов, но если рядом стоят элементы с разным визуальным весом, элементу тесно и хочется добавить воздуха — сделайте исключение и увеличьте отступ до этого элемента. Например, если строка текста зажата двумя массивными многострочными полями:</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+                        <p>Допустимо использовать шаг в полмодуля в отступах до 40px. Например, внутри составных элементов, таких как текст с иконкой:</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+                        <p>А также внутри небольших групп, например в шапке или меню:</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+        
+                        <div class="content_wrapper_links" id="align">
+                            <p class="gray links">#2</p>
+                            <p class="links">Выравнивание</p>
+                        </div>
+
+                        <p>Выравнивайте элементы форм или таблиц по базовой линии текста:</p>
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+
+                        <p>Чтобы показать вложенность элементов, сделайте смещение, кратное модулю:</p>
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+
+                        <p>Хорошо, когда количество вертикальных или горизонтальных направляющих минимально в рамках одного смыслового блока — так макет выглядит аккуратнее и проще. Но следите за тем, чтобы не возникало ложных связей между выровненными объектами.</p>
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#margins">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Отступы</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#align">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Выравнивание</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("firmstyle");
+    </script>
+ </body>
+</html>

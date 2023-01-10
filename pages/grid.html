@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Фирменный стиль</h4>
+                    <h2 class="col_content_title">Модуль и сетка</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+                        <div class="content_wrapper_links" id="module">
+                            <p class="gray links">#1</p>
+                            <p class="links">Зачем нужен модуль</p>
+                        </div>
+        
+                        <p>Использование модуля делает дизайн вычисляемым и более предсказуемым:</p>
+
+                        <h4>Модуль упрощает выбор размеров</h4>
+                        <p>Без модуля шагом становится 1px и выбирать приходится из избыточного количества вариантов. Модуль ограничивает выбор и экономит время на рутинных задачах верстки.</p>
+
+                        <h4>Модуль ускоряет перенос дизайна в код</h4>
+                        <p>Если разработчик знает, что все размеры должны быть кратны 8px, то отступ в 7px в макете не вызовет вопросов. Разработчик сам примет правильное решение и исправит ошибку без обращения к дизайнеру.</p>
+
+                        <div class="content_wrapper_links" id="sizes">
+                            <p class="gray links">#2</p>
+                            <p class="links">Размер</p>
+                        </div>
+
+                        <p>Модуль в 8 пикселей — базовая размерная единица интерфейсов CURSA. На основе модуля строятся типографика и контролы, выбираются размеры для иконок, высчитываются отступы между элементами.</p>
+                        <p>Мы используем модуль везде, где это не нарушает эстетики и не противоречит здравому смыслу.</p>
+                        
+                        <!-- TODO: добавить картинку -->
+                        <img class="content_image" src=""/>
+                        
+                        <p>Модуль 8 пикселей:</p>
+                        <ul>
+                            <li class="list_style_dots"><p>Можно более последовательно использовать во всех элементах дизайна</p></li>
+                            <li class="list_style_dots"><p>Имеет меньший шаг — больше вариативности</p></li>
+                            <li class="list_style_dots"><p>Имеет два подмодуля 4px и 2px</p></li>
+                            <li class="list_style_dots"><p>Объекты с размером, кратным 0,5m, всегда можно разместить по центру</p></li>
+                        </ul>
+                    
+                        <div class="content_wrapper_links" id="principles">
+                            <p class="gray links">#3</p>
+                            <p class="links">Принципы</p>
+                        </div>
+
+                        <p>Модуль 8px — основной, обозначается «m». В размерах до 5m допустимо использовать шаг в полмодуля, 0,5m.</p>
+                        <p>Модуль имеет прикладное значение — является ориентиром для выбора размеров, но самостоятельной ценности у него нет, поэтому макеты не нужно фанатично вписывать в восьмипиксельную сетку.</p>
+                        <p>Подробнее о том, как использовать модуль в верстке, написано в гайде «Отступы и выравнивание».</p>    
+                    
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#module">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Зачем нужен модуль</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#sizes">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Размер</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#principles">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Принципы</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("firmstyle");
+    </script>
+ </body>
+</html>

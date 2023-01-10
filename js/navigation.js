@@ -11,10 +11,8 @@ export default function navigation (sectionName) {
                 <div class="nav_section_body">
                     <nav class="nav_subsections">
                         <ul>
-                            <li><a href="goal.html">Цель</a></li>
-                            <li><a href="">Задачи</a></li>
-                            <li><a href="">Принципы</a></li>
-                            <li><a href="">Дизайн-видение</a></li>
+                            <li><a href="goal.html">Цели и задачи</a></li>
+                            <li><a href="principles.html">Принципы</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -25,16 +23,16 @@ export default function navigation (sectionName) {
                     <img class="nav_section_arrow" src="../img/nav_arrow.png" alt=""/>
                 </div>
                 <div class="nav_section_body">
-                <nav class="nav_subsections">
-                    <ul>
-                        <li><a href="text_styles.html">Текстовые стили</a></li>
-                        <li><a href="colors.html">Цвета</a></li>
-                        <li><a href="icons.html">Иконки</a></li>
-                        <li><a href="grid.html">Модуль и сетка</a></li>
-                        <li><a href="margins.html">Отступы и выравнивание</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <nav class="nav_subsections">
+                        <ul>
+                            <li><a href="text_styles.html">Текстовые стили</a></li>
+                            <li><a href="colors.html">Цвета</a></li>
+                            <li><a href="icons.html">Иконки</a></li>
+                            <li><a href="grid.html">Модуль и сетка</a></li>
+                            <li><a href="margins.html">Отступы и выравнивание</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="nav_section" data-label="components">
                 <div class="nav_section_header">
@@ -44,7 +42,7 @@ export default function navigation (sectionName) {
                 <div class="nav_section_body">
                     <nav class="nav_subsections">
                         <ul>
-                        <li><a href="/service-1/">Кнопки</a></li>
+                        <li><a href="buttons.html">Кнопки</a></li>
                         <li><a href="/service-1/">Поля ввода</a></li>
                         <li><a href="/service-1/">Фильтры</a></li>
                         <li><a href="/service-1/">Пагинация</a></li>
