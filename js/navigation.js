@@ -1,7 +1,9 @@
 export default function navigation (sectionName) {
 
     const navHtmlFragment = `
-        <img class="logo" src="../img/logo.png" alt=""/>
+        <a href="../index.html">
+            <img class="logo" src="../img/logo.png" alt=""/>
+        </a>
         <div class="nav_wrapper">
             <div class="nav_section" data-label="about">
                 <div class="nav_section_header">
@@ -43,7 +45,9 @@ export default function navigation (sectionName) {
                     <nav class="nav_subsections">
                         <ul>
                         <li><a href="buttons.html">Кнопки</a></li>
-                        <li><a href="/service-1/">Поля ввода</a></li>
+                        <li><a href="links.html">Ссылки</a></li>
+                        <li><a href="inputs.html">Поля ввода</a></li>
+                        <li><a href="dropdowns.html">Выпадающие списки</a></li>
                         <li><a href="/service-1/">Фильтры</a></li>
                         <li><a href="/service-1/">Пагинация</a></li>
                         <li><a href="/service-1/">Оповещения</a></li>

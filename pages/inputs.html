@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Фирменный стиль</h4>
+                    <h2 class="col_content_title">Поля ввода</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+
+                        <div class="content_wrapper_links" id="purpose">
+                            <p class="gray links">#1</p>
+                            <p class="links">Назначение</p>
+                        </div>
+
+                        <p>Поле ввода дает возможность указать значение с помощью клавиатуры.</p>
+                        <p>Используйте поле ввода для коротких текстовых или цифровых значений без предсказуемого формата.</p>
+                        <p>Если нужно ввести больше 5 слов — используйте многострочное поле ввода.</p>
+
+                        <img class="content_image" src="../img/inputs-1.jpg"/>
+
+                        <div class="content_wrapper_links" id="naming">
+                            <p class="gray links">#2</p>
+                            <p class="links">Название и плейсхолдер</p>
+                        </div>
+
+                        <h4>Название</h4>
+                        <p>Название поля пишется с заглавной буквы.</p>
+                        <p>Называйте поле ввода существительным, указывающим что нужно ввести. Избегайте в названии слов «ваш», «введите» и подобных — они не несут смысла.</p>
+                        <p>Не ставьте двоеточие после названия: без него все понятно, оно только создает лишний визуальный шум.</p>
+
+                        <h4>Плейсхолдер</h4>
+                        <p>Если из названия не очевидно, как заполнять поле, используйте плейсхолдер – подсказку, которая отображается внутри поля, пока оно не заполнено.</p>
+                        <p>При получении полем фокуса плейсхолдер становится светлее, при вводе первого символа исчезает.</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+
+                        <p>Плейсхолдер не должен подсказывать конкретное значение, которое нужно ввести в поле. Плейсхолдер не должен подсказывать конкретное значение, которое нужно ввести в поле. Плейсхолдер не должен подсказывать конкретное значение, которое нужно ввести в поле.</p>
+
+                        <div class="content_wrapper_links" id="sizes">
+                            <p class="gray links">#3</p>
+                            <p class="links">Размеры</p>
+                        </div>
+
+                        <p>Поле ввода, как и кнопка, может быть трех размеров. Используйте средние и большие поля ввода в том случае, если это главные контролы на странице. Например, поле поиска в справочнике.</p>
+                        <p>Название поля должно выравниваться по базовой линии текста в поле. Название поля в несколько строк должно выравниваться по базовой линии первой строки.</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src="../img/inputs-2.jpg"/>
+
+                        <p>Ширину поля делайте соответствующей ширине вводимого значения. Это подсказывает пользователю какое значение от него ожидают, помогает пользователю убедиться, что он правильно заполнил поле.</p>
+                        <p>В рамках одной формы нужно выбрать 3-4 ширины для полей. Так форма выглядит проще и аккуратнее.</p>
+                        
+                        <div class="content_wrapper_links" id="validate">
+                            <p class="gray links">#4</p>
+                            <p class="links">Валидация и очистка поля</p>
+                        </div>
+                        
+                        <p>Поле с ошибкой подсвечивается красной рамкой и появляется подсказка об ошибке.</p>
+                        <img class="content_image" src="../img/inputs-3.jpg"/>
+                        
+                        <p>Если пользователю нужно часто очищать поле и вводить новое значение — используйте для этого специальную кнопку-крестик.</p>
+                        <p>Крестик показывается, когда в поле введен хотя бы 1 символ. Крестик показывается даже когда фокус находится вне поля. При клике на крестик фокус переходит в поле, введенное значение стирается</p>
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>  
+
+                        <div class="content_wrapper_links" id="state">
+                            <p class="gray links">#5</p>
+                            <p class="links">Состояния</p>
+                        </div>
+                        
+                        <p>Углы поля имеют скругления в 4px. В рамке поля используется чисто черный цвет — так поле достаточно контрастно выглядит на серых и цветных фонах.</p>
+                        <img class="content_image" src=""/>                        
+
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#purpose">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Назначение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#naming">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Название и плейсхолдер</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#sizes">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Размеры</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#validate">
+                                <p class="gray links">#4</p>
+                                <p class="links subtext">Валидация и очистка поля</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#state">
+                                <p class="gray links">#5</p>
+                                <p class="links subtext">Состояние</p>
+                            </a>
+                        </li>                        
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("components");
+    </script>
+ </body>
+</html>

@@ -109,12 +109,14 @@ a, .links {
     flex-wrap: nowrap;
     flex-direction: row;
     min-height: 100vh;
+    background-color: var(--gray-light-bg);
 }
 .col_nav {
     flex: 1.88;
 }
 .col_content {
     flex: 7;
+    background-color: var(--white);
 }
 .content_main {
     display: flex;
@@ -135,7 +137,7 @@ nav {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: #F1EFF4;
+    background: var(--gray-light-bg);
     padding: 64px 32px 64px 64px;
     position: sticky;
     top: 0;
@@ -188,7 +190,7 @@ nav .nav_wrapper .nav_section:not(:first-child) {
     margin: 24px 0;
 }
 .content_wrapper_links {
-    margin: 3rem 0 1rem -2rem;
+    margin: 3rem 0 1rem -2.5rem;
 }
 .links {
     display: inline;

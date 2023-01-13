@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Фирменный стиль</h4>
+                    <h2 class="col_content_title">Выпадающие списки</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+
+                        <div class="content_wrapper_links" id="purpose">
+                            <p class="gray links">#1</p>
+                            <p class="links">Назначение</p>
+                        </div>
+
+                        <p>Используйте раскрывающийся список для выбора одного значения из 5–25 вариантов:</p>
+                        <ul>
+                            <li class="list_style_dots"><p>при заполнении форм, например выбор месяца;</p></li>
+                            <li class="list_style_dots"><p>переключение состояний, например фильтры;</p></li>
+                            <li class="list_style_dots"><p>выбора предустановленных настроек, например частота уведомлений, часовой пояс.</p></li>
+                        </ul>
+
+                        <img class="content_image" src="../img/dropdown.jpg"/>
+
+                        <p>Если значений в списке до 5, лучше использовать группу радиокнопок или переключатель. Если значений больше 25 — используйте комбобокс, который отличается от выпадающего списка только возможностью начать вводить значение в поле с целью ускорения поиска.</p>
+
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#purpose">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Назначение</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("components");
+    </script>
+ </body>
+</html>

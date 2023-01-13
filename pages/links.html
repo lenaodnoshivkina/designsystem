@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Фирменный стиль</h4>
+                    <h2 class="col_content_title">Кнопки</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+
+                        <div class="content_wrapper_links" id="purpose">
+                            <p class="gray links">#1</p>
+                            <p class="links">Назначение</p>
+                        </div>
+
+                        <p>Ссылка связывает веб-страницы или выступает как более легкий аналог кнопки.</p>
+
+                        <div class="content_wrapper_links" id="form">
+                            <p class="gray links">#2</p>
+                            <p class="links">Оформление</p>
+                        </div>
+
+                        <img class="content_image" src="../img/links.jpg"/>
+                        <p>Если подчеркивание создает излишний визуальный шум, от него можно отказаться, убедившись, что ссылка опознается как интерактивный элемент. Например, выделить её смысловым цветом, или цветом продукта. </p>
+                        
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+                        <p>Однако если вы отказались от подчёркивания в дефолтном состоянии, подчеркивайте ссылки при наведении и фокусе. Это помогает пользователю убедиться, что ссылка нажимается.</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+                        <p>Иконки в ссылках также помогают идентифицировать её как интерактивный элемент. Иконка также реагирует на нажатие, но при наведении не подчеркивается.</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+                        <p>Если внутри блока есть другие второстепенные ссылки, то при наведении курсора на блок, ссылку лучше подчеркнуть. Это подскажет пользователю, какая именно ссылка обработает нажатие</p>
+                        
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+                        <p>Картинка и ссылка-подпись должны работать как единое целое: при наведении на картинку ссылка должна подчеркиваться.</p>
+                        
+                        <div class="content_wrapper_links" id="color">
+                            <p class="gray links">#3</p>
+                            <p class="links">Цвет</p>
+                        </div>
+
+                        <p>Ссылки вместе с подчеркиванием окрашиваются в дефолтный черный цвет контролов.</p>
+                        <p>При необходимости ссылки допускается выделять синим. Пользователи однозначно воспринимают синий текст, как ссылку. Так  же ссылки допускается выделять фирменным цветом продукта.</p>
+                        <p>Допустимо использовать красный для необратимых или негативных по смыслу действий, а зеленый для действий с положительной окраской. Оформлять ссылки таким образом уместно, если они стоят рядом. Так как это ссылки для действий, используйте их вместе с иконками.</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>
+
+                        <p>Если нужно показать пользователю, что он уже посещал эту страницу, посещенную ссылку можно отметить более темным цветом или более светлым цветом в случае ссылок черного цвета.</p>
+                        <p>Применяйте это в новостях, справке, документации и не применяйте навигации и действиях.</p>
+                        
+                        <div class="content_wrapper_links" id="state">
+                            <p class="gray links">#4</p>
+                            <p class="links">Состояние</p>
+                        </div>
+
+                        <p>Курсор мыши при наведении на ссылку меняется на «указатель», подчёркивание становится становится толще (2px).</p>
+
+                        <!-- Добавить картинку -->
+                        <img class="content_image" src=""/>                        
+
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#purpose">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Назначение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#form">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Оформление</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#color">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Цвет</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#state">
+                                <p class="gray links">#4</p>
+                                <p class="links subtext">Состояние</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("components");
+    </script>
+ </body>
+</html>
