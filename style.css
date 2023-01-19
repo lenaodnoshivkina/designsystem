@@ -60,6 +60,7 @@ h2 {
 h3 {
     font-size: 2.5rem;
     line-height: 3rem;
+    margin: 2rem 0 1.5rem;
 }
 h4 {
     font-size: 1.25rem;
@@ -127,10 +128,14 @@ a, .links {
 }
 .content_main_aside {
     flex: 1.37;
+    height: fit-content;
+    position: sticky;
+    top: 0;
 }
 
 /* nav styles */
 .logo {
+    max-width: 70%;
     margin-bottom: 64px;   
 }
 nav {
@@ -166,7 +171,7 @@ nav .nav_wrapper .nav_section:not(:first-child) {
     display: none;
 }
 .nav_subsections {
-    padding: 24px 0 24px 24px
+    padding: 16px 0 24px 24px
 }
 .nav_subsections li:not(:first-child) {
     margin-top: 16px;
@@ -187,7 +192,7 @@ nav .nav_wrapper .nav_section:not(:first-child) {
 }
 .content_image {
     width: 100%;
-    margin: 24px 0;
+    margin: 0 0 16px;
 }
 .content_wrapper_links {
     margin: 3rem 0 1rem -2.5rem;
@@ -214,4 +219,27 @@ nav .nav_wrapper .nav_section:not(:first-child) {
 }
 .aside_links > a > p {
     margin-bottom: 0;
+}
+
+.avatar_image {
+    max-height: 260px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.col_content_persons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.team_person {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.team_person > ul > li {
+    margin-left: 1rem;
+}
+.team_person > ul {
+    padding-top: 8px;
 }

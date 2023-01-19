@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Компоненты</h4>
+                    <h2 class="col_content_title">Тоглы</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+
+                        <div class="content_wrapper_links" id="purpose">
+                            <p class="gray links">#1</p>
+                            <p class="links">Назначение</p>
+                        </div>
+
+                        <p>Тогл переключает состояния. Например, включает или отключает уведомления в настройках.</p>
+                        <p>Функционально тогл — аналог чекбокса, но контекст их использования может отличаться.</p>
+                        <p>Тогл нельзя использовать для выбора элементов в списке. Например, выбрать несколько писем.</p>
+                        <p>Тогл больше и заметнее чекбокса. Хорошо, когда на странице 1 тогл, максимум 2–3.</p>
+
+                        <img class="content_image" src="../img/togles-1.jpg"/>
+                        
+                        <div class="content_wrapper_links" id="description">
+                            <p class="gray links">#2</p>
+                            <p class="links">Описание работы</p>
+                        </div>
+
+                        <p>Чтобы переключить тогл, нужно кликнуть на сам контрол или его название.</p>
+                        <p>При переключении тогла эффект наступает сразу. Поэтому тогл не нуждается в кнопке «Сохранить».</p>
+                        <p>Если тогл нельзя использовать, заблокируйте его. Валидация не нужна.</p>
+
+                        <div class="content_wrapper_links" id="sizes">
+                            <p class="gray links">#3</p>
+                            <p class="links">Размеры и расположение</p>
+                        </div>
+
+                        <p>В отличие от чекбокса, тогл может располагаться как слева, так и справа от названия. Если тоглов несколько, лучше их ставить слева от текста.</p>
+
+                        <img class="content_image" src="../img/togles-2.jpg"/>
+
+                        <div class="content_wrapper_links" id="color">
+                            <p class="gray links">#4</p>
+                            <p class="links">Цвет</p>
+                        </div>
+
+                        <p>Цвет тогла во включенном состоянии — как у чекбоксов, радиокнопок и ссылок. Можно использовать фирменный цвет, для всех тоглов в сервисе. Можно использовать позитивный цвет там, где этого требует сценарий.</p>
+
+                        <img class="content_image" src="../img/togles-3.jpg"/>
+
+                        <div class="content_wrapper_links" id="state">
+                            <p class="gray links">#5</p>
+                            <p class="links">Состояния</p>
+                        </div>
+
+                        <img class="content_image" src="../img/togles-4.jpg"/>
+
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#purpose">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Назначение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#description">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Описание работы</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#sizes">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Размеры и расположение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#color">
+                                <p class="gray links">#4</p>
+                                <p class="links subtext">Цвет</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#state">
+                                <p class="gray links">#5</p>
+                                <p class="links subtext">Состояния</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("components");
+    </script>
+ </body>
+</html>

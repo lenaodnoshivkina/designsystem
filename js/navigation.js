@@ -2,7 +2,7 @@ export default function navigation (sectionName) {
 
     const navHtmlFragment = `
         <a href="../index.html">
-            <img class="logo" src="../img/logo.png" alt=""/>
+            <img class="logo" src="../img/logo.svg" alt=""/>
         </a>
         <div class="nav_wrapper">
             <div class="nav_section" data-label="about">
@@ -15,6 +15,7 @@ export default function navigation (sectionName) {
                         <ul>
                             <li><a href="goal.html">Цели и задачи</a></li>
                             <li><a href="principles.html">Принципы</a></li>
+                            <li><a href="team.html">Команда</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -48,13 +49,10 @@ export default function navigation (sectionName) {
                         <li><a href="links.html">Ссылки</a></li>
                         <li><a href="inputs.html">Поля ввода</a></li>
                         <li><a href="dropdowns.html">Выпадающие списки</a></li>
-                        <li><a href="/service-1/">Фильтры</a></li>
-                        <li><a href="/service-1/">Пагинация</a></li>
-                        <li><a href="/service-1/">Оповещения</a></li>
-                        <li><a href="/service-1/">Вкладки</a></li>
-                        <li><a href="/service-1/">Индикаторы выполнения</a></li>
-                        <li><a href="/service-1/">Ползунки</a></li>
-                        <li><a href="/service-1/">Подсказки</a></li>
+                        <li><a href="radiobuttons.html">Радиокнопки</a></li>
+                        <li><a href="checkboxes.html">Чекбоксы</a></li>
+                        <li><a href="togles.html">Тоглы</a></li>
+                        <li><a href="switches.html">Переключатели</a></li>
                         </ul>
                     </nav>
                 </div>

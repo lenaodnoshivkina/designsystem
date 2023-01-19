@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Компоненты</h4>
+                    <h2 class="col_content_title">Радиокнопки</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+
+                        <div class="content_wrapper_links" id="purpose">
+                            <p class="gray links">#1</p>
+                            <p class="links">Назначение</p>
+                        </div>
+
+                        <p>Группа радиокнопок используется для выбора одного значения из нескольких. Ее используют, когда вариантов выбора немного — 2–5. Если названия вариантов короткие, вместо группы радиокнопок можно использовать переключатель, так форма будет выглядеть компактнее. Если значений больше 5, используйте раскрывающийся список или комбобокс.</p>
+                        
+                        <div class="content_wrapper_links" id="description">
+                            <p class="gray links">#2</p>
+                            <p class="links">Описание работы</p>
+                        </div>
+
+                        <p>Клик по названию или по самой радиокнопке приводит к ее выбору. Повторное нажатие не снимает выбор.</p>
+                        <p>В группе радиокнопок только один пункт может быть выбран. Группа радиокнопок не может состоять из 1 пункта.</p>
+                        <p>Если группа радиокнопок используется для настройки параметров и показывает текущее состояние системы, одна из радиокнопок всегда выбрана. Так видно, в каком состоянии система находится по умолчанию. При желании пользователь может вернуть настройку в исходное состояние.</p>
+
+                        <img class="content_image" src="../img/radiobuttons-1.jpg"/>
+
+                        <p>Если группа радиокнопок нужна для сообщения каких-то сведений, то по умолчанию может быть не выбран ни один из пунктов.</p>
+                        <p>Варианты, которые нельзя выбрать в списке радиокнопок, должны быть заблокированы. Валидация может быть только в том случае, если обязательно выбрать хотя бы один вариант.</p>
+                        <p>Если пользователю может быть не очевидно, что произойдет при выборе, объясните это дополнительным текстом или картинкой.</p>
+
+                        <img class="content_image" src="../img/radiobuttons-2.jpg"/>
+
+                        <p>Если заголовок группы находится слева, текст валидации располагайте под группой радиокнопок.</p>
+
+                        <img class="content_image" src="../img/radiobuttons-3.jpg"/>
+
+                        <div class="content_wrapper_links" id="sizes">
+                            <p class="gray links">#3</p>
+                            <p class="links">Размеры и расположение</p>
+                        </div>
+
+                        <p>Радиокнопки располагают в строку, только если их 2 штуки. Если больше — только в столбец. Не располагайте радиокнопки из одной группы в несколько столбцов. Группы радиокнопок смешиваются, и непонятно, к какой группе относится конкретная радиокнопка.</p>
+                        <p>Название группы выравнивайте по базовой линии первого пункта:</p>
+
+                        <img class="content_image" src="../img/radiobuttons-4.jpg"/>
+
+                        <div class="content_wrapper_links" id="state">
+                            <p class="gray links">#4</p>
+                            <p class="links">Состояния</p>
+                        </div>
+
+                        <img class="content_image" src="../img/radiobuttons-5.jpg"/>
+
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#purpose">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Назначение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#description">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Описание работы</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#sizes">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Размеры и расположение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#state">
+                                <p class="gray links">#4</p>
+                                <p class="links subtext">Состояния</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("components");
+    </script>
+ </body>
+</html>

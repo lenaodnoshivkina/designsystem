@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Компоненты</h4>
+                    <h2 class="col_content_title">Переключатели</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+
+                        <div class="content_wrapper_links" id="purpose">
+                            <p class="gray links">#1</p>
+                            <p class="links">Назначение</p>
+                        </div>
+
+                        <p>Переключатель — это замена группе радиокнопок. Переключатель меньше по высоте, это позволяет делать формы компактнее.</p>
+                        <p>Переключатель используют, когда вариантов выбора немного: от трех до пяти.</p>
+
+                        <img class="content_image" src="../img/switches-1.jpg"/>
+
+                        <p>Старайтесь не использовать переключатель из двух значений — пользователи не понимают, какой из пунктов выбран. </p>
+                        <p>Не используйте переключатель в качестве навигации, для этого лучше подходят вкладки.</p>
+                        
+                        <div class="content_wrapper_links" id="description">
+                            <p class="gray links">#2</p>
+                            <p class="links">Описание работы</p>
+                        </div>
+
+                        <p>Название переключателя пишут с заглавной буквы и формулируют так, чтобы:</p>
+                        <ul>
+                            <li class="list_style_dots"><p>было понятно, что можно выбрать только 1 вариант;</p></li>
+                            <li class="list_style_dots"><p>название каждого пункта не содержало повторяющуюся часть.</p></li>
+                        </ul>
+
+                        <p>Избегайте названий пунктов в 3 и более слов. Если сократить названия не получается, используйте группу радиокнопок.</p>
+                        <p>Если переключатель используется для настройки параметров и показывает текущее состояние системы, один из пунктов переключателя должен быть выбран по умолчанию. При желании пользователь сможет вернуть настройку в исходное состояние. Выбранный по умолчанию пункт ставьте первым в списке.</p>
+                        <p>Если переключатель нужен для сообщения каких-то сведений, то по умолчанию может быть не выбран ни один из вариантов.</p>
+                        <p>В переключателе не должно быть пунктов, которые нельзя выбрать. Единственным, для чего может использоваться валидация — указывать на обязательность самого выбора.</p>
+
+                        <img class="content_image" src="../img/switches-2.jpg"/>
+
+                        <div class="content_wrapper_links" id="sizes">
+                            <p class="gray links">#3</p>
+                            <p class="links">Размеры и расположение</p>
+                        </div>
+
+                        <p>Все отступы должны быть одинаковыми. Размеры отступов соответствуют кнопке среднего размера.</p>
+                        <img class="content_image" src="../img/switches-3.jpg"/>
+
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#purpose">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Назначение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#description">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Описание работы</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#sizes">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Размеры и расположение</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("components");
+    </script>
+ </body>
+</html>
