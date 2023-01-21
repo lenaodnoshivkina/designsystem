@@ -1,4 +1,4 @@
-export default function demoButton(style) {
+export default function demoSwitcher(style) {
     const buttons = document.getElementById("demo").querySelectorAll("button");
 
     buttons.forEach(btn => {
