@@ -27,6 +27,17 @@
                 <div class="content_main_block">
                     <div class="col_content_wrapper">
 
+                        <div class="demo_element flex-start">
+                            <div>
+                                <div class="label_toggle">
+                                    <div class="toggle active"></div> <p>Получать уведомления</p>
+                                </div>
+                                <div class="label_toggle">
+                                    <div class="toggle"></div> <p>Разрешить доступ к контактам </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="content_wrapper_links" id="purpose">
                             <p class="gray links">#1</p>
                             <p class="links">Назначение</p>
@@ -115,6 +126,8 @@
 
     <script type="module">
         import navigation from "../js/navigation.js";
+        import initToggle from "../js/toggles.js";
+        initToggle();
         navigation("components");
     </script>
  </body>

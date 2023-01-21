@@ -29,20 +29,20 @@
 
                         <div class="demo_wrapper">
                             <div class="demo_element flex-start" style="flex:none; width: 340px; height: 100px;">
-                                <div class="radio_label">
-                                    <p class="medium bold" style="padding: 0;">Тема интерфейса</p>
+                                <div class="checkbox_label">
+                                    <p class="medium bold" style="padding: 0;">Включить в подписку</p>
                                 </div>
                                 <div class="radio_wrapper">
-                                    <label class="">
-                                        <input type="checkbox" name="checkbox-checked" checked />
-                                        Интенсив «База дизайна» 
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="checkbox" checked/>
+                                        Интенсив «База дизайна»
                                     </label>
-                                    <label class="">
-                                        <input type="checkbox" name="checkbox-checked" checked />
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="radio" />
                                         Еженедельную рассылку новостей дизайна
                                     </label>
-                                    <label class="">
-                                        <input type="checkbox" name="checkbox-checked" checked />
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="radio" />
                                         Сопровождение куратора на всех этапах интенсива
                                     </label>
                                 </div>
@@ -59,6 +59,7 @@
                             </div>
                         </div>
 
+                        
                         <div class="content_wrapper_links" id="purpose">
                             <p class="gray links">#1</p>
                             <p class="links">Назначение</p>
@@ -162,14 +163,14 @@
     <script type="module">
         import navigation from "../js/navigation.js";
         import initSelect from "../js/select.js";
-        import demoRadio from "../js/demoRadio.js";
+        import demoCheckbox from "../js/demoCheckbox.js";
         navigation("components");
         initSelect("small");
 
         const selectOptions = document.querySelector(".select-items").querySelectorAll("div");
         selectOptions.forEach(opt => {
             opt.addEventListener("click", (e) => {
-                demoRadio(e.currentTarget.innerText)
+                demoCheckbox(e.currentTarget.innerText)
         });
         })
     </script>
