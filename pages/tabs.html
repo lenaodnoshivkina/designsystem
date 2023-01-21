@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cursa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="../favicon.ico" rel="icon">
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); 
+  </style>
+ </head>
+ <body>
+    <div class="root_wrapper">
+        <nav class="col_nav"></nav>
+        <div class="col_content">
+            <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">Компоненты</h4>
+                    <h2 class="col_content_title">Вкладки</h2>
+                </div>
+            </div>
+            <div class="content_main">
+                <div class="content_main_block">
+                    <div class="col_content_wrapper">
+
+                        <div class="content_wrapper_links" id="purpose">
+                            <p class="gray links">#1</p>
+                            <p class="links">Назначение</p>
+                        </div>
+                        
+                        <div class="content_wrapper_links" id="description">
+                            <p class="gray links">#2</p>
+                            <p class="links">Описание работы</p>
+                        </div>
+
+                        <div class="content_wrapper_links" id="color">
+                            <p class="gray links">#3</p>
+                            <p class="links">Цвет</p>
+                        </div>
+
+                        <div class="content_wrapper_links" id="state">
+                            <p class="gray links">#4</p>
+                            <p class="links">Состояния</p>
+                        </div>
+
+                        <img class="content_image" src="../img/radiobuttons-5.jpg"/>
+
+                    </div>    
+                </div>
+                <aside class="content_main_aside">
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#purpose">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Назначение</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#description">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Описание работы</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#color">
+                                <p class="gray links">#3</p>
+                                <p class="links subtext">Цвет</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#state">
+                                <p class="gray links">#4</p>
+                                <p class="links subtext">Состояния</p>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div> 
+        </div> 
+    </div> 
+
+    <script type="module">
+        import navigation from "../js/navigation.js";
+        navigation("components");
+    </script>
+ </body>
+</html>

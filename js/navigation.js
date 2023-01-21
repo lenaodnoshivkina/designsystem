@@ -53,6 +53,10 @@ export default function navigation (sectionName) {
                         <li><a href="checkboxes.html">Чекбоксы</a></li>
                         <li><a href="togles.html">Тоглы</a></li>
                         <li><a href="switches.html">Переключатели</a></li>
+                        <li><a href="tabs.html">Вкладки</a></li>
+                        <li><a href="paging.html">Пагинация</a></li>
+                        <li><a href="progress-bar.html">Индикаторы выполнения</a></li>
+                        <li><a href="tooltips.html">Подсказки</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -62,6 +66,16 @@ export default function navigation (sectionName) {
                     <p>Модули</p>
                     <img class="nav_section_arrow" src="../img/nav_arrow.png" alt=""/>
                 </div>
+                <div class="nav_section_body">
+                <nav class="nav_subsections">
+                    <ul>
+                    <li><a href="template-grid.html">Сетка</a></li>
+                    <li><a href="header.html">Шапка</a></li>
+                    <li><a href="navigation.html">Навигация</a></li>
+                    <li><a href="footer.html">Подвал</a></li>
+                    </ul>
+                </nav>
+            </div>
             </div>
         </div>
     `
