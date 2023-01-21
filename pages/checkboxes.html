@@ -27,6 +27,38 @@
                 <div class="content_main_block">
                     <div class="col_content_wrapper">
 
+                        <div class="demo_wrapper">
+                            <div class="demo_element flex-start" style="flex:none; width: 340px; height: 100px;">
+                                <div class="radio_label">
+                                    <p class="medium bold" style="padding: 0;">Тема интерфейса</p>
+                                </div>
+                                <div class="radio_wrapper">
+                                    <label class="">
+                                        <input type="checkbox" name="checkbox-checked" checked />
+                                        Интенсив «База дизайна» 
+                                    </label>
+                                    <label class="">
+                                        <input type="checkbox" name="checkbox-checked" checked />
+                                        Еженедельную рассылку новостей дизайна
+                                    </label>
+                                    <label class="">
+                                        <input type="checkbox" name="checkbox-checked" checked />
+                                        Сопровождение куратора на всех этапах интенсива
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="demo_setting">
+                                <div class="select">
+                                    <select>
+                                        <option value="0">По умолчанию</option>
+                                        <option id="default" value="1">По умолчанию</option>
+                                        <option id="disable" value="2">Заблокирован</option>
+                                        <option id="error" value="3">Ошибка</option>
+                                    </select>
+                                </div>   
+                            </div>
+                        </div>
+
                         <div class="content_wrapper_links" id="purpose">
                             <p class="gray links">#1</p>
                             <p class="links">Назначение</p>
@@ -39,7 +71,7 @@
                             <li class="list_style_dots"><p>выбора параметров. Например, включение уведомлений и выбор случаев, в которых нужно присылать уведомления.</p></li>
                         </ul>
 
-                        <img class="content_image" src="../img/checkboxes-1.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-1.webp"/>
                         <p>Чекбокс не запускает действие немедленно. Как правило для этого нужно нажать подтверждающую кнопку. Для немедленного включения какого-то режима в интерфейсе лучше подходит тогл.</p>
                         
                         <div class="content_wrapper_links" id="description">
@@ -50,14 +82,14 @@
                         <p>Клик по названию или по самому чекбоксу приводит к его выбору или снятию выбора. </p>
                         <p>Если пользователю может быть не очевидно, что произойдет, при включении чекбокса, объясните это дополнительным текстом или используйте группу радиокнопок.</p>
 
-                        <img class="content_image" src="../img/checkboxes-2.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-2.webp"/>
                         <p>Если чекбокс связан по смыслу с другим элементом формы, их можно группировать</p>
 
-                        <img class="content_image" src="../img/checkboxes-3.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-3.webp"/>
                         <p>Варианты, которые нельзя выбрать в списке чекбоксов, должны быть заблокированы. Валидация может быть только в том случае, если обязательно выбрать хотя бы один вариант.</p>
 
                         <p>Чекбоксы с валидацией выделяются красной рамкой. Если заголовок группы находится слева, текст валидации располагайте под группой чекбоксов. Если заголовок группы находится над группой чекбоксов, текст ошибки располагайте сразу под заголовком группы.</p>
-                        <img class="content_image" src="../img/checkboxes-4.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-4.webp"/>
 
                         <div class="content_wrapper_links" id="partly">
                             <p class="gray links">#3</p>
@@ -67,25 +99,25 @@
                         <p>Иногда списки с чекбоксами используются в справочниках или настройках и содержат дочерние элементы.</p>
                         <p>Если выбрана только часть дочерних чекбоксов, родительский чекбокс переходит в состояние «частично выбран».</p>
 
-                        <img class="content_image" src="../img/checkboxes-5.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-5.webp"/>
 
                         <div class="content_wrapper_links" id="sizes">
                             <p class="gray links">#4</p>
                             <p class="links">Размеры и расположение</p>
                         </div>
 
-                        <img class="content_image" src="../img/checkboxes-6.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-6.webp"/>
                         <p>В общем случае группа чекбоксов должна располагаться в 1 столбец. В списке чекбоксов, размещенных горизонтально или в несколько столбцов тяжелее ориентироваться, потому что не всегда очевидна граница группы.</p>
 
                         <p>Расстояние между вложенными пунктами больше расстояния между основной группой элементов на 0,5m. В этом случае расстояние между остальными элементами увеличивается на 1m и становится 3m.</p>
-                        <img class="content_image" src="../img/checkboxes-7.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-7.webp"/>
 
                         <div class="content_wrapper_links" id="state">
                             <p class="gray links">#5</p>
                             <p class="links">Состояния</p>
                         </div>
 
-                        <img class="content_image" src="../img/checkboxes-8.jpg"/>
+                        <img class="content_image" src="../img/checkboxes-8.webp"/>
 
                     </div>    
                 </div>
@@ -129,7 +161,17 @@
 
     <script type="module">
         import navigation from "../js/navigation.js";
+        import initSelect from "../js/select.js";
+        import demoRadio from "../js/demoRadio.js";
         navigation("components");
+        initSelect("small");
+
+        const selectOptions = document.querySelector(".select-items").querySelectorAll("div");
+        selectOptions.forEach(opt => {
+            opt.addEventListener("click", (e) => {
+                demoRadio(e.currentTarget.innerText)
+        });
+        })
     </script>
  </body>
 </html>
