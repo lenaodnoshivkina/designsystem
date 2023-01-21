@@ -27,6 +27,38 @@
                 <div class="content_main_block">
                     <div class="col_content_wrapper">
 
+                        <div class="demo_wrapper">
+                            <div class="demo_element row" style="flex:none; width: 340px; height: 100px;">
+                                <div class="radio_label">
+                                    <p class="medium">Тема интерфейса</p>
+                                </div>
+                                <div class="radio_wrapper">
+                                    <label class="radio">
+                                        <input type="radio" name="radio" checked/>
+                                        Светлая
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" />
+                                        Темная
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" />
+                                        Выбирать автоматически
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="demo_setting">
+                                <div class="select">
+                                    <select>
+                                        <option value="0">По умолчанию</option>
+                                        <option id="default" value="1">По умолчанию</option>
+                                        <option id="disable" value="2">Заблокирован</option>
+                                        <option id="error" value="3">Ошибка</option>
+                                    </select>
+                                </div>   
+                            </div>
+                        </div>
+
                         <div class="content_wrapper_links" id="purpose">
                             <p class="gray links">#1</p>
                             <p class="links">Назначение</p>
@@ -108,7 +140,17 @@
 
     <script type="module">
         import navigation from "../js/navigation.js";
+        import initSelect from "../js/select.js";
+        import demoRadio from "../js/demoRadio.js";
         navigation("components");
+        initSelect("small");
+
+        const selectOptions = document.querySelector(".select-items").querySelectorAll("div");
+        selectOptions.forEach(opt => {
+            opt.addEventListener("click", (e) => {
+                demoRadio(e.currentTarget.innerText)
+        });
+        })
     </script>
  </body>
 </html>
