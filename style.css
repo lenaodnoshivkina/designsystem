@@ -551,7 +551,7 @@ nav .nav_wrapper .nav_section:not(:first-child) {
 
 
 .col_content_wrapper {
-    margin: 64px 12% 64px 104px;
+    margin: 4rem 12% 4rem 6.5rem;
 }
 .col_content_title {
     margin: 8px 0 0 0;
@@ -563,6 +563,14 @@ nav .nav_wrapper .nav_section:not(:first-child) {
 .content_wrapper_links {
     margin: 3rem 0 1rem -2.5rem;
 }
+.col_content_footer {
+    margin: 4rem 12% 2rem 4rem;
+}
+.col_content_footer p {
+    margin-bottom: 0.5rem;
+}
+
+
 .links {
     display: inline;
 }

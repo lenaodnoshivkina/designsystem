@@ -20,7 +20,7 @@
                 <img class="logo" src="./img/logo.svg" alt=""/>
             </a>
             <div class="nav_wrapper">
-                <div class="nav_section" data-label="about">
+                <div class="nav_section active" data-label="about">
                     <div class="nav_section_header">
                         <p>О дизайн системе</p>
                         <img class="nav_section_arrow" src="./img/nav_arrow.png" alt=""/>
@@ -96,19 +96,60 @@
         </nav>
         <div class="col_content">
             <div class="content_header">
+                <div class="col_content_wrapper">
+                    <h4 class="gray">О дизайн системе</h4>
+                    <h2 class="col_content_title">Цели и задачи</h2>
+                </div>
             </div>
             <div class="content_main">
                 <div class="content_main_block">
+                    <div class="col_content_wrapper">
+                        <div class="content_wrapper_links" id="goal">
+                            <p class="gray links">#1</p>
+                            <p class="links">Цели</p>
+                        </div>
+                        
+                        <p>Систематизировать дизайн для творческого диджитал-объединения «CURSA» с помощью создание взаимосвязанных базовых элементов (дизайн-токены и библиотеки компонентов) и прийти к единому полю взаимосвязанных продуктов, таких как страница объединения, страницы-анонсов мероприятий и обучающих материалы. То есть создать удобную экосистему продуктов, которая будет понятна разработчикам и пользователям.</p>
+                                
+                        <div class="content_wrapper_links" id="tasks">
+                            <p class="gray links">#2</p>
+                            <p class="links">Задачи</p>
+                        </div>
 
+                        <ul>
+                          <li class="list_style_dots"><p>Определить философию компании;</p></li>
+                          <li class="list_style_dots"><p>Определить элементы фирменного стиля;</p></li>
+                          <li class="list_style_dots"><p>Создать наборы готовых компонентов и описать их;</p></li>
+                          <li class="list_style_dots"><p>Создать гайдлайны по использованию фирменного стиля;</p></li>
+                          <li class="list_style_dots"><p>Сформировать документацию по техническим особенностям реализации компонентов.</p></li>
+                        </ul>
+                      
+                    </div>   
                 </div>
                 <aside class="content_main_aside">
-                    
+                    <ul class="aside_wrapper_links">
+                        <li class="aside_links">
+                            <a href="#goal">
+                                <p class="gray links">#1</p>
+                                <p class="links subtext">Цели</p>
+                            </a>
+                        </li>
+                        <li class="aside_links">
+                            <a href="#tasks">
+                                <p class="gray links">#2</p>
+                                <p class="links subtext">Задачи</p>
+                            </a>
+                        </li>
+                    </ul>
                 </aside>
             </div> 
-        </div>  
+        </div> 
     </div>
 
     <script type="module">
+        import copyright from "./js/copyright.js";
+        copyright();
+
         const sections = document.querySelectorAll('.nav_section');
 
         sections.forEach(section => {

@@ -106,7 +106,9 @@
     <script type="module">
         import navigation from "../js/navigation.js";
         import initSwitcher from "../js/switchers.js";
-        import demoSwitcher from "../js/demoSwitcher.js"
+        import demoSwitcher from "../js/demoSwitcher.js";
+        import copyright from "../js/copyright.js";
+        copyright();
         initSwitcher();
         navigation("components");
         ["large", "medium", "small"].forEach(style => document.getElementById(style).addEventListener('click', () => demoSwitcher(style)));
