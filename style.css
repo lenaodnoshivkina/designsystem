@@ -20,10 +20,12 @@
 }
 
 /* base styles */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 body {
     margin: 0;
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
     color: black;
 }
 p, ul, li {
@@ -502,7 +504,7 @@ nav .nav_wrapper .nav_section:not(:first-child) {
 
 
 .col_content_wrapper {
-    margin: 64px 12% 0 104px;
+    margin: 64px 12% 64px 104px;
 }
 .col_content_title {
     margin: 8px 0 0 0;
@@ -606,8 +608,8 @@ nav .nav_wrapper .nav_section:not(:first-child) {
     align-items: center;
     justify-content: center;
 }
-.demo_element.row {
-    flex-direction: row;
+.demo_element.flex-start {
+    align-items: flex-start;
 }
 .demo_setting {
     flex: 5;
