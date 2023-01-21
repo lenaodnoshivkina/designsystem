@@ -26,6 +26,41 @@
             <div class="content_main">
                 <div class="content_main_block">
                     <div class="col_content_wrapper">
+                        <div class="demo_wrapper">
+                            <div class="demo_element" style="align-items: stretch;">
+                                <div id="demo" class="select">
+                                    <select>
+                                        <option value="0">По умолчанию</option>
+                                        <option value="1">Анализ бренда</option>
+                                        <option value="2">Разработка логотипа</option>
+                                        <option value="3">Разработка упаковки</option>
+                                        <option value="3">Разработка фирменного стила</option>
+                                        <option value="3">Ретушь фотографий</option>
+                                        <option value="3">Предпечатная подготовка</option>
+                                    </select>
+                                </div>   
+                            </label>
+                            </div>
+                            <div class="demo_setting">
+                                <div>
+                                    <p>Размеры</p>
+                                    <div class="switcher_wrapper vertical">
+                                        <button id="large" class="small active">Большой</button>
+                                        <button id="medium" class="small">Средний</button>
+                                        <button id="small" class="small">Малый</button>
+                                    </div>
+                                </div>
+
+                            <div id="setting" class="select">
+                                <select>
+                                    <option value="0">По умолчанию</option>
+                                    <option id="default" value="1">По умолчанию</option>
+                                    <option id="disable" value="2">Заблокирован</option>
+                                    <option id="error" value="3">Ошибка</option>
+                                </select>
+                            </div>   
+                            </div>
+                        </div>
 
                         <div class="content_wrapper_links" id="purpose">
                             <p class="gray links">#1</p>
@@ -115,7 +150,21 @@
 
     <script type="module">
         import navigation from "../js/navigation.js";
+        import initSwitcher from "../js/switchers.js";
+        import initSelect from "../js/select.js";
+        import demoSelect from "../js/demoSelect.js";
         navigation("components");
+        initSwitcher();
+        initSelect("small", "setting");
+        initSelect("medium", "demo");
+        ["large", "medium", "small"].forEach(style => document.getElementById(style).addEventListener('click', () => demoSelect(style)));
+
+        const selectOptions = document.querySelector("#setting").querySelectorAll("div");
+        selectOptions.forEach(opt => {
+            opt.addEventListener("click", (e) => {
+            demoSelect(e.currentTarget.innerText)
+        });
+        })
     </script>
  </body>
 </html>

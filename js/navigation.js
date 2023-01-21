@@ -28,7 +28,7 @@ export default function navigation (sectionName) {
                 <div class="nav_section_body">
                     <nav class="nav_subsections">
                         <ul>
-                            <li><a href="text_styles.html">Текстовые стили</a></li>
+                            <li><a href="text-styles.html">Текстовые стили</a></li>
                             <li><a href="colors.html">Цвета</a></li>
                             <li><a href="icons.html">Иконки</a></li>
                             <li><a href="grid.html">Модуль и сетка</a></li>

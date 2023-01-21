@@ -27,6 +27,30 @@
                 <div class="content_main_block">
                     <div class="col_content_wrapper">
 
+                        <div class="demo_wrapper">
+                            <div class="demo_element">
+                                <a id="demo" class="link large" href="">Ссылка</a>
+                            </div>
+                            <div class="demo_setting">
+                                <div>
+                                    <p>Размеры</p>
+                                    <div class="switcher_wrapper vertical">
+                                        <button id="large" class="small active">Большой</button>
+                                        <button id="medium" class="small">Средний</button>
+                                        <button id="small" class="small">Малый</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="label_toggle">
+                                        <div id="disabled" class="toggle"></div><p>Заблокирована</p>
+                                    </div>
+                                    <div class="label_toggle">
+                                        <div id="addIcon" class="toggle"></div> <p>С иконкой</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="content_wrapper_links" id="purpose">
                             <p class="gray links">#1</p>
                             <p class="links">Назначение</p>
@@ -119,7 +143,13 @@
 
     <script type="module">
         import navigation from "../js/navigation.js";
+        import initSwitcher from "../js/switchers.js";
+        import demoLink from "../js/demoLinks.js";
+        import initToggle from "../js/toggles.js";
         navigation("components");
+        initSwitcher();
+        initToggle();
+        ["large", "medium", "small", "addIcon", "disabled"].forEach(style => document.getElementById(style).addEventListener('click', () => demoLink(style)));
     </script>
  </body>
 </html>

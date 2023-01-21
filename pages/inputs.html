@@ -26,6 +26,44 @@
             <div class="content_main">
                 <div class="content_main_block">
                     <div class="col_content_wrapper">
+                        <div class="demo_wrapper">
+                            <div class="demo_element" style="flex:none; width: 340px; height: 100px;">
+                                <label 
+                                    id="label_demo" 
+                                    class="large" 
+                                    name="email"
+                                >
+                                    Email
+                                <input 
+                                    id="demo" 
+                                    type="text"
+                                    class="large"
+                                    name="email" 
+                                    placeholder="Email"
+                                />
+                                <p class="subtext error">Неверный формат электронной почты</p>
+                            </label>
+                            </div>
+                            <div class="demo_setting">
+                                <div>
+                                    <p>Размеры</p>
+                                    <div class="switcher_wrapper vertical">
+                                        <button id="large" class="small active">Большой</button>
+                                        <button id="medium" class="small">Средний</button>
+                                        <button id="small" class="small">Малый</button>
+                                    </div>
+                                </div>
+
+                            <div class="select">
+                                <select>
+                                    <option value="0">По умолчанию</option>
+                                    <option id="default" value="1">По умолчанию</option>
+                                    <option id="disable" value="2">Заблокирован</option>
+                                    <option id="error" value="3">Ошибка</option>
+                                </select>
+                            </div>   
+                            </div>
+                        </div>
 
                         <div class="content_wrapper_links" id="purpose">
                             <p class="gray links">#1</p>
@@ -134,7 +172,23 @@
 
     <script type="module">
         import navigation from "../js/navigation.js";
+        import initSwitcher from "../js/switchers.js";
+        import demoInput from "../js/demoInputs.js";
+        import initToggle from "../js/toggles.js";
+        import initSelect from "../js/select.js";
         navigation("components");
+        initSwitcher();
+        initToggle();
+        initSelect("small");
+        ["large", "medium", "small"].forEach(style => document.getElementById(style).addEventListener('click', () => demoInput(style)));
+
+        const selectOptions = document.querySelector(".select-items").querySelectorAll("div");
+        selectOptions.forEach(opt => {
+            opt.addEventListener("click", (e) => {
+            demoInput(e.currentTarget.innerText)
+        });
+        })
     </script>
+    <script src="../js/select.js"></script>
  </body>
 </html>
