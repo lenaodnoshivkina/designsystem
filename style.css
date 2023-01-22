@@ -369,16 +369,13 @@ input[type="radio"] {
     align-items: center;
     justify-content: center;
 }
-
 input[type="radio"]:disabled {
     border: 1px solid var(--gray-ln);
     cursor: not-allowed;
 }
-
 input[type="radio"].error {
     border: 1px solid var(--red-dark-bg);
 }
-
 input[type="radio"]::before {
     content: "";
     width: 0.75rem;
@@ -464,6 +461,44 @@ input[type="checkbox"].error {
 input[type="checkbox"].error:checked {
     background-color: var(--red-dark-bg);
 }
+
+.toggle {
+    display: inline-block;
+    width: 2rem; 
+    height: 1.25rem;
+    border-radius: 10px; 
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    cursor: pointer;
+    position: relative;
+}
+.toggle::after {
+    content: "";
+    height: 1rem; 
+    width: 1rem;
+    border-radius: 17px;
+    background-color: var(--black); 
+    top: 2px; 
+    left: 2px; 
+    position: absolute;
+    z-index: 1;
+ }
+.toggle.active {
+    background-color: var(--black);
+}
+.toggle.active::after {
+    left: 14px;
+    background-color: var(--white); 
+}
+.label_toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.label_toggle > p {
+    display: inline;
+}
+
   
 /* colored text */
 .gray {
@@ -549,7 +584,6 @@ nav .nav_wrapper .nav_section:not(:first-child) {
     transform: rotate(180deg);
 }
 
-
 .col_content_wrapper {
     margin: 4rem 12% 4rem 6.5rem;
 }
@@ -618,35 +652,6 @@ nav .nav_wrapper .nav_section:not(:first-child) {
     padding-top: 8px;
 }
 
-.toggle {
-    display: inline-block;
-    width: 2rem; 
-    height: 1.25rem;
-    border-radius: 10px; 
-    background-color: var(--white);
-    border: 1px solid var(--black);
-    cursor: pointer;
-    position: relative;
-}
-.toggle::after {
-    content: "";
-    height: 1rem; 
-    width: 1rem;
-    border-radius: 17px;
-    background-color: var(--black); 
-    top: 2px; 
-    left: 2px; 
-    position: absolute;
-    z-index: 1;
- }
-.toggle.active {
-    background-color: var(--black);
-}
-.toggle.active::after {
-    left: 14px;
-    background-color: var(--white); 
-}
-
 .demo_wrapper {
     display: flex;
     flex-direction: row;
@@ -671,12 +676,4 @@ nav .nav_wrapper .nav_section:not(:first-child) {
     gap: 1.5rem;
     display: flex;
     flex-direction: column;
-}
-.label_toggle {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-.label_toggle > p {
-    display: inline;
 }

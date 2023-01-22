@@ -7,7 +7,7 @@ export default function navigation (sectionName) {
         <div class="nav_wrapper">
             <div class="nav_section" data-label="about">
                 <div class="nav_section_header">
-                    <p>О дизайн системе</p>
+                    <p>О дизайн-системе</p>
                     <img class="nav_section_arrow" src="../img/nav_arrow.png" alt=""/>
                 </div>
                 <div class="nav_section_body">
